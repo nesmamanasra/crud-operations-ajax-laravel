@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function products()
     {
-        $products = Product::latest()->paginate(7);
+        $products = Product::latest()->paginate(4);
         $productsTow = Product::latest()->paginate(4);
         return view('products',compact('products','productsTow'));
     }
@@ -73,7 +73,7 @@ class ProductController extends Controller
     // pagination product
     public function pagination(Request $request)
     {
-        $products = Product::latest()->paginate(7);
+        $products = Product::latest()->paginate(4);
         return view('paginationProducts',compact('products'))->render();
     }
 }
