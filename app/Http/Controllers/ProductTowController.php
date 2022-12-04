@@ -7,16 +7,7 @@ use Illuminate\Http\Request;
 
 class ProductTowController extends Controller
 {
-
-    public function index()
-    {
-        //show all data here
-        // $products = Product::all();
-        // $productsTow = Product::latest()->paginate(4);
-        // return view("products" ,compact('productsTow'));
-    }
-
-    public function store(Request $request)
+   public function store(Request $request)
     {
         //add new product
         $request->validate([
@@ -24,7 +15,7 @@ class ProductTowController extends Controller
             'price'=>'required',
 
         ]);
-        $product = Product::create($request->all());
+        $productsTow = Product::create($request->all());
          return redirect()->route('products')->with('sucsess','create update');
 
     }

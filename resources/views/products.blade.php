@@ -91,9 +91,6 @@
               <td>
 
               <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#updateModalTow" 
-                    data-id="{{$product->id}}"
-                    data-name="{{$product->name}}"
-                    data-price="{{$product->price}}"
                     >edit</button>
               <form action="{{route('products.destroy', $product->id)}}" style="display:inline" method="POST">
                 @csrf

@@ -16,11 +16,11 @@
         <input type="hidden" id="updateId">
           <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Name Product</label>
-          <input type="text" class="form-control" id="updateName" name="updateName" value="{{$product->name}}">
+          <input type="text" class="form-control" id="name" name="name" value="{{$product->name}}">
           </div>
           <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Price Product</label>
-          <input type="text" class="form-control" id="updatePrice" name="updatePrice" value="{{$product->price}}">
+          <input type="text" class="form-control" id="price" name="price" value="{{$product->price}}">
         </div>
   
       </div>
